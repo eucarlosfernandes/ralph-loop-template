@@ -1,12 +1,24 @@
 {
+  // Nome exibido no VS Code ao abrir o container
   "name": "Ralph Loop Environment",
+
+  // Usa docker-compose para construir e rodar o container
   "dockerComposeFile": "docker-compose.yml",
+
+  // Nome do serviço definido no docker-compose.yml que o VS Code vai conectar
   "service": "devcontainer",
+
+  // Diretório de trabalho dentro do container (mapeado via volume no docker-compose)
   "workspaceFolder": "/workspace",
+
   "customizations": {
     "vscode": {
+      // Extensões instaladas automaticamente no container
+      // Adicione aqui extensões que você usa (ex: "dbaeumer.vscode-eslint")
       "extensions": []
     }
   },
+
+  // Usuário que roda os comandos dentro do container (evita rodar como root)
   "remoteUser": "node"
 }

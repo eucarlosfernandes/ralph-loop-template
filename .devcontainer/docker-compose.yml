@@ -4,8 +4,18 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+
     volumes:
+      # Monta o diretório do projeto dentro do container
+      # :cached melhora a performance de leitura no macOS (Docker Desktop)
       - ..:/workspace:cached
+
+    # Mantém o container rodando indefinidamente para o VS Code poder conectar
+    # Sem isso, o container encerraria imediatamente após o build
     command: sleep infinity
+
     environment:
+      # Chave de API da Anthropic, necessária para o Claude Code funcionar
+      # Configure no seu sistema: export ANTHROPIC_API_KEY="sk-ant-..."
+      # O valor é passado do host para o container automaticamente
       - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}

@@ -12,9 +12,3 @@ de um Ralph Loop. Você não tem memória entre iterações.
 5. Escreva código limpo e testado
 6. Faça commit após cada tarefa com mensagem descritiva
 7. Se ficar travado, documente o problema no progress.txt
-
-## Preferências Técnicas
-- Use TypeScript quando possível
-- Siga princípios de código limpo
-- Escreva testes para lógica crítica
-- Use nomes de variáveis significativos

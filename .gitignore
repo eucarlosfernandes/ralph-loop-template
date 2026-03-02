@@ -1,55 +1,18 @@
 # Dependências
 node_modules/
-.pnp/
-.pnp.js
-
-# Build
-dist/
-build/
-out/
-.next/
-.nuxt/
 
 # Ambiente
 .env
 .env.local
-.env.*.local
-
-# Logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# IDE
-.vscode/*
-!.vscode/settings.json
-!.vscode/extensions.json
-.idea/
-*.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-.venv/
-venv/
-env/
-*.egg-info/
-
-# Teste
-coverage/
-.nyc_output/
+.env.*
 
 # Ralph Loop (gerados em runtime)
 progress.txt
 DONE.md
 ralph.log
 
-# Claude
+# Claude Code
 .claude/
+
+# OS
+.DS_Store
