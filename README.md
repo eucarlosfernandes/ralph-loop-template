@@ -12,7 +12,7 @@ Template para criar projetos de software com um agente autônomo (Claude Code) q
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/ralph-loop-template.git meu-projeto
+   git clone https://github.com/eucarlosfernandes/ralph-loop-template.git meu-projeto
    cd meu-projeto
    ```
 
